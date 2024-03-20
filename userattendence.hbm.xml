@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+<class name="com.user.hibernate.UserAttendence" table="userattendence" schema="test">
+
+<id name="userId" type="java.lang.Long" column="pk_id">
+<generator class="increment"/>
+</id>
+
+<property name="firstname" type="java.lang.String" column="firstname"></property>
+
+<property name="lastname" type="java.lang.String" column="lastname"></property>
+
+<property name="date" type="java.util.Date" column="date"></property>
+
+<property name="present" type="java.lang.String" column="present"></property>
+
+<property name="absent" type="java.lang.String" column="absent"></property>
+
+<property name="halfday" type="java.lang.String" column="halfday"></property>
+
+<property name="holiday" type="java.lang.String" column="holiday"></property>
+
+<property name="paidleave" type="java.lang.String" column="paidleave"></property>
+
+</class>
+
+
+</hibernate-mapping>

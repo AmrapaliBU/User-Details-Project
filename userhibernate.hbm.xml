@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+<class name="com.user.hibernate.UserHibernate" table="user" schema="test">
+
+<id name="id" type="java.lang.Long" column="pk_id">
+<generator class="increment"/>
+</id>
+
+<property name="firstname" type="java.lang.String" column="firstname"></property>
+
+<property name="lastname" type="java.lang.String" column="lastname"></property>
+
+<property name="contact_no" type="java.lang.String" column="contact_no"></property>
+
+<property name="address" type="java.lang.String" column="address"></property>
+
+<property name="username" type="java.lang.String" column="username"></property>
+
+<property name="password" type="java.lang.String" column="password"></property>
+
+<property name="re_password" type="java.lang.String" column="re_password"></property>
+
+<property name="city" type="java.lang.String" column="city"></property>
+
+<property name="pan_no" type="java.lang.String" column="pan_no"></property>
+
+<property name="email" type="java.lang.String" column="email"></property>
+
+</class>
+
+
+</hibernate-mapping>
